@@ -11,12 +11,12 @@ const UserSchema = new mongoose.Schema({
         unique: true
     },
     passwordHash: {
-        type:String,
+        type: String,
         required: true
     },
     avatarUrl: String
 }, {
-    timestamps:true
+    timestamps: true
 })
 
 export default mongoose.model('User', UserSchema)
